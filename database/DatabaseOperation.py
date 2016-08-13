@@ -7,7 +7,7 @@ class DatabaseOperation:
     connection = None
 
     def __init__(self):
-        self.connection = sqlite3.connect("Person")
+        self.connection = sqlite3.connect("/Users/wang/PycharmProjects/ContactsServer/Person")
         self.cursor = self.connection.cursor()
 
     def createDatabase(self):
@@ -21,13 +21,10 @@ class DatabaseOperation:
 
     def selectDatabase(self):
         self.cursor.execute("SELECT * FROM person")
-        for x in self.cursor:
-            print x
+        return self.cursor
 
     def addPerson(self):
         pass
-        # self.cursor.execute("INSERT INTO person VALUES (10,'王晨','四川省','18383038628','123456789','123456')")
-        # self.connection.commit()
 
     def deletePerson(self):
         self.cursor.execute('''''')
@@ -36,5 +33,4 @@ class DatabaseOperation:
 
 if __name__ == '__main__':
     dO = DatabaseOperation()
-    dO.addPerson()
     dO.selectDatabase()
