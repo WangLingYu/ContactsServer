@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="937f86d9-05e1-4ad6-a879-3939deeebec4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/DatabaseOperation.py" afterPath="$PROJECT_DIR$/database/DatabaseOperation.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,12 +50,12 @@
       <file leaf-file-name="DatabaseOperation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/DatabaseOperation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <marker date="1471055601000" expanded="true" signature="283:493" placeholder="CREATE TABLE... person" />
-                <marker date="1471055601000" expanded="true" signature="556:576" placeholder="SELECT * FRO... person" />
-                <marker date="1471055601000" expanded="true" signature="699:775" placeholder="INSERT INTO person... " />
+                <marker date="1471056334000" expanded="true" signature="283:493" placeholder="CREATE TABLE... person" />
+                <marker date="1471056334000" expanded="true" signature="558:578" placeholder="SELECT * FRO... person" />
+                <marker date="1471056334000" expanded="true" signature="701:777" placeholder="INSERT INTO person... " />
               </folding>
             </state>
           </provider>
@@ -131,22 +132,7 @@
     </navigator>
     <panes>
       <pane id="Scratches">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Extensions" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.intellij.database" />
-              <option name="myItemType" value="com.intellij.ide.scratch.ScratchProjectViewPane$MyPsiNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
@@ -174,20 +160,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ContactsServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ContactsServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ContactsServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -573,12 +545,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/DatabaseOperation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1471055601000" expanded="true" signature="283:493" placeholder="CREATE TABLE... person" />
-            <marker date="1471055601000" expanded="true" signature="556:576" placeholder="SELECT * FRO... person" />
-            <marker date="1471055601000" expanded="true" signature="699:775" placeholder="INSERT INTO person... " />
+            <marker date="1471056334000" expanded="true" signature="283:493" placeholder="CREATE TABLE... person" />
+            <marker date="1471056334000" expanded="true" signature="558:578" placeholder="SELECT * FRO... person" />
+            <marker date="1471056334000" expanded="true" signature="701:777" placeholder="INSERT INTO person... " />
           </folding>
         </state>
       </provider>

@@ -19,7 +19,7 @@ class DatabaseOperation:
     person_company_phone TEXT,
     person_home_phone TEXT)''')
 
-    def selectPerson(self):
+    def selectDatabase(self):
         self.cursor.execute("SELECT * FROM person")
         for x in self.cursor:
             print x
@@ -37,4 +37,4 @@ class DatabaseOperation:
 if __name__ == '__main__':
     dO = DatabaseOperation()
     dO.addPerson()
-    dO.selectPerson()
+    dO.selectDatabase()
