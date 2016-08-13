@@ -8,14 +8,34 @@ app = Flask(__name__)
 
 @app.route('/<string:customer_id>/contacts')
 def getPersonList(customer_id):
-    dO = database.DatabaseOperation()
-    dO.selectDatabase()
-
     if customer_id == '1':
+        dO = database.DatabaseOperation()
+        cursor = dO.selectDatabase()
+        persons = []
+        for result in cursor:
+            person = model.Person()
+            person.id = result[0]
+            person.name = result[1]
+            person.address = result[2]
+            person.phone = result[3]
+            person.company_phone = result[4]
+            person.home_phone = result[5]
+            persons.append(person)
         return json.dumps(
             [
-                {"person_phone": "18383038628", "person_name": "王晨", "person_portrait": "PYTHON"},
-                {"person_phone": "15983040391", "person_name": "晨心", "person_portrait": "JAVA"}
+                {'person_id': persons[0].id,
+                 'person_name': persons[0].name,
+                 'person_address': persons[0].address,
+                 'person_phone': persons[0].phone,
+                 'person_company_phone': persons[0].company_phone,
+                 'person_home_phone': persons[0].home_phone},
+                {
+                    'person_id': persons[1].id,
+                    'person_name': persons[1].name,
+                    'person_address': persons[1].address,
+                    'person_phone': persons[1].phone,
+                    'person_company_phone': persons[1].company_phone,
+                    'person_home_phone': persons[1].home_phone},
             ]
         )
 
