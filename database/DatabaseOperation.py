@@ -1,5 +1,5 @@
 # coding=utf-8
-import sqlite3
+import sqlite3, model
 
 
 class DatabaseOperation:
@@ -19,18 +19,15 @@ class DatabaseOperation:
     person_company_phone TEXT,
     person_home_phone TEXT)''')
 
-    def selectDatabase(self):
+    def selectPerson(self):
         self.cursor.execute("SELECT * FROM person")
         return self.cursor
 
-    def addPerson(self):
-        pass
-
-    def deletePerson(self):
-        self.cursor.execute('''''')
+    def addPerson(self, person):
+        self.cursor.execute('INSERT INTO person VALUES (?,?,?,?,?,?)', (
+            person.id, person.name, person.address, person.phone, person.company_phone, person.home_phone))
         self.connection.commit()
 
-
-if __name__ == '__main__':
-    dO = DatabaseOperation()
-    dO.selectDatabase()
+    def deletePerson(self, person):
+        self.cursor.execute('DELETE FROM person WHERE Id = ?', (person.id,))
+        self.connection.commit()
