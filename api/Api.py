@@ -11,33 +11,19 @@ def getPersonList(customer_id):
     if customer_id == '1':
         dO = database.DatabaseOperation()
         cursor = dO.selectDatabase()
-        persons = []
-        for result in cursor:
-            person = model.Person()
-            person.id = result[0]
-            person.name = result[1]
-            person.address = result[2]
-            person.phone = result[3]
-            person.company_phone = result[4]
-            person.home_phone = result[5]
-            persons.append(person)
-        return json.dumps(
-            [
-                {'person_id': persons[0].id,
-                 'person_name': persons[0].name,
-                 'person_address': persons[0].address,
-                 'person_phone': persons[0].phone,
-                 'person_company_phone': persons[0].company_phone,
-                 'person_home_phone': persons[0].home_phone},
-                {
-                    'person_id': persons[1].id,
-                    'person_name': persons[1].name,
-                    'person_address': persons[1].address,
-                    'person_phone': persons[1].phone,
-                    'person_company_phone': persons[1].company_phone,
-                    'person_home_phone': persons[1].home_phone},
-            ]
-        )
+
+    persons = []
+
+    for result in cursor:
+        persons.append({'person_id': result[0],
+                        'person_name': result[1],
+                        'person_address': result[2],
+                        'person_phone': result[3],
+                        'person_company_phone': result[4],
+                        'person_home_phone': result[5]}
+                       )
+
+    return json.dumps(persons)
 
 
 @app.route('/login', methods=['POST'])
